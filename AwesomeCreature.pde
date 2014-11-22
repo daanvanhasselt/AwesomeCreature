@@ -15,7 +15,7 @@ class AwesomeCreature extends Creature {
 
   void draw(float x, float y)
   {
-    speed = map(pow(agitation, 8), 0, 1, 1, 4);
+    speed = map(pow(agitation, 8), 0, 1, 1, 10);
     updateTime();
     
     globalRotation += map(speed, 1, 10, 0.015, 0.1);
