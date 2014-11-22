@@ -23,7 +23,7 @@ class AwesomeCreature extends Creature {
     pushMatrix();
     translate(x, y);
 
-    for(float s = 1.5; s > 0.45; s -= 0.1) {
+    for(float s = 1.5; s > 0.35; s -= 0.1) {
       drawCircles(s, globalRotation * map(s, 1.5, 0.25, 1.0, -1.0), 350, map(s, 1.5, 0.25, 0, PI));
     }
 
@@ -72,8 +72,8 @@ class AwesomeCreature extends Creature {
       }
       
       pushMatrix();
-      float w = 30;
-      float h = 30;
+      float w = 15;
+      float h = 15;
 
       translate(x, y);
       scale(s);
