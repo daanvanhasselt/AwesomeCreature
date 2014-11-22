@@ -56,7 +56,7 @@ class AwesomeCreature extends Creature {
     
     radius *= sinOfTime(500, 100, 175, 1.0);
     
-    int numberOfCircles = 10;
+    int numberOfCircles = 15;
     for (int i = 0; i < numberOfCircles; i++) {
       float phase = map(i, 0, numberOfCircles, 0, TWO_PI);
       float x = cos(phase) * radius;
@@ -65,7 +65,7 @@ class AwesomeCreature extends Creature {
       strokeWeight(2);
       noFill();
 
-      float s = sinOfTime(500, 0, 1, phase * 3);
+      float s = sinOfTime(500, 0, 0.3, phase * 3);
       s *= sinOfTime(pulseTimeScale, 0.1, 1, pulseOffset);
       if(s == 0) {
         continue;
