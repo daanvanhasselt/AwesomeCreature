@@ -78,7 +78,17 @@ class AwesomeCreature extends Creature {
       translate(x, y);
       scale(s);
       rotate(phase);
-      ellipse(0, 0, w, h);
+
+//      ellipse(0, 0, w, h);
+      beginShape();
+      for (int i = 0; i < 6; i++) {
+        float phase = map(i, 0, 6, 0, TWO_PI);
+        float x = cos(phase) * w;
+        float y = sin(phase) * h;
+        vertex(x, y);
+      }
+      endShape(CLOSE);
+
       popMatrix();
     }
     popMatrix();
