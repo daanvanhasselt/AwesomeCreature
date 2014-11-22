@@ -23,7 +23,7 @@ class AwesomeCreature extends Creature {
     pushMatrix();
     translate(x, y);
 
-    for(float s = 1.3; s > 0.15; s -= 0.1) {
+    for(float s = 1.5; s > 0.35; s -= 0.1) {
       drawCircles(s, globalRotation * map(s, 1.5, 0.25, 1.0, -1.0), 350, map(s, 1.5, 0.25, 0, PI));
     }
 
@@ -54,7 +54,7 @@ class AwesomeCreature extends Creature {
     pushMatrix();
     rotate(rotation);
     
-    radius *= sinOfTime(500, 100, 175, 1.0);
+    radius *= sinOfTime(500, 50, 100, 1.0);
     
     int numberOfCircles = 15;
     for (int i = 0; i < numberOfCircles; i++) {
