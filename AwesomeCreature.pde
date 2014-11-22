@@ -65,7 +65,7 @@ class AwesomeCreature extends Creature {
       strokeWeight(2);
       noFill();
 
-      float s = sinOfTime(500, 0, 1, phase);
+      float s = sinOfTime(500, 0, 1, map(agitation, 0, 1, phase, phase * 3));
       s *= sinOfTime(pulseTimeScale, 0.1, 1, pulseOffset);
       if(s == 0) {
         continue;
