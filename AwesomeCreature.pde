@@ -65,15 +65,15 @@ class AwesomeCreature extends Creature {
       strokeWeight(2);
       noFill();
 
-      float s = sinOfTime(500, 0, 0.3, phase * 3);
+      float s = sinOfTime(500, 0, 1, phase);
       s *= sinOfTime(pulseTimeScale, 0.1, 1, pulseOffset);
       if(s == 0) {
         continue;
       }
       
       pushMatrix();
-      float w = 25;
-      float h = 25;
+      float w = 15;
+      float h = 15;
 
       translate(x, y);
       scale(s);
