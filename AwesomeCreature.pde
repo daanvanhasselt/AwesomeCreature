@@ -72,8 +72,8 @@ class AwesomeCreature extends Creature {
       }
       
       pushMatrix();
-      float w = 15;
-      float h = 15;
+      float w = 25;
+      float h = 25;
 
       translate(x, y);
       scale(s);
