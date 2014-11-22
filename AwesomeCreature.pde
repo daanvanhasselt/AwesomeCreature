@@ -81,8 +81,8 @@ class AwesomeCreature extends Creature {
 
 //      ellipse(0, 0, w, h);
       beginShape();
-      for (int i = 0; i < 6; i++) {
-        float phase = map(i, 0, 6, 0, TWO_PI);
+      for (int j = 0; j < 6; j++) {
+        float phase = map(j, 0, 6, 0, TWO_PI);
         float x = cos(phase) * w;
         float y = sin(phase) * h;
         vertex(x, y);
